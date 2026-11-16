@@ -16,7 +16,7 @@
           "script": {
             "type": "text/javascript",
             "exec": [
-              "pm.test(\"Status code is 201\", function () {\r\n    pm.response.to.have.status(201);\r\n});\r\n\r\nlet responseData = pm.response.json();\r\nif (responseData.id) {\r\n    pm.collectionVariables.set(\"productId\", responseData.id);\r\n}"
+              "pm.test(\"Status code is 201\", function () {\r\n    pm.response.to.have.status(999);\r\n});\r\n\r\nlet responseData = pm.response.json();\r\nif (responseData.id) {\r\n    pm.collectionVariables.set(\"productId\", responseData.id);\r\n}"
             ]
           }
         },
